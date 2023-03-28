@@ -22,7 +22,7 @@ else {
 PokemonCard.propTypes = {
     PokemonCard : PropTypes.shape({ 
     name : PropTypes.string.isRequired,
-    imgSrc : PropTypes.string.isRequired,
+    imgSrc : PropTypes.string,
     })
 }
 
