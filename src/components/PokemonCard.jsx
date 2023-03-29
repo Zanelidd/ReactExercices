@@ -1,21 +1,21 @@
 import PropTypes from "prop-types" 
 
 
-const PokemonCard = (props)=>{
-  if ((props.imgSrc) === "" ){
+const PokemonCard = ({name,imgSrc})=>{
+  if ((imgSrc) === "" ){
     return (
     <figure>
     <p> ???? </p>
-    <figcaption>{props.name}</figcaption>
+    <figcaption>{name}</figcaption>
 </figure>)
 
 }
 else {
     return (
 <figure>
-    <img src={props.imgSrc}
-        alt={props.name}></img>
-   <figcaption>{props.name}</figcaption>
+    <img src={imgSrc}
+        alt={name}></img>
+   <figcaption>{name}</figcaption>
 </figure>)}
 };
 
