@@ -24,7 +24,10 @@ PokemonCard.propTypes = {
     name : PropTypes.string.isRequired,
     imgSrc : PropTypes.string,
     })
+    
 }
+
+console.log(PokemonCard.propTypes)
 
 
   
