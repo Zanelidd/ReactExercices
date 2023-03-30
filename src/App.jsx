@@ -40,7 +40,7 @@ function App() {
   const pokemon = PokemonList[pokemonIndex];
 
    useEffect(() =>{if (pokemon.name === "pikachu"){
-    alert ('Pika pikachuu !')
+    alert ('Pika pikachuu !')  
    }})
   
 
