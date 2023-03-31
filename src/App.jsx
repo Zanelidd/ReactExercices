@@ -32,28 +32,24 @@ const PokemonList = [
 
 function App() {
 
-
   useEffect(() => {alert ('Hello Pokemon Trainer')},[]);
-
   
   const [pokemonIndex, setPokemonIndex] = useState(0);
   const pokemon = PokemonList[pokemonIndex];
 
-   useEffect(() =>{if (pokemon.name === "pikachu"){
+if (pokemon.name === "pikachu"){
     alert ('Pika pikachuu !')  
-   }})
-  
+   }
 
   return (
     <div className="App">
       <div>
       <PokemonCard name={pokemon.name} imgSrc={pokemon.imgSrc} />
-      <NavBar PokemonList={PokemonList} pokemonIndex={pokemonIndex} setPokemonIndex={setPokemonIndex} />
+      <NavBar  PokemonList={PokemonList} pokemonIndex={pokemonIndex} setPokemonIndex={setPokemonIndex}   />
       </div>
     </div>
   )
 }
-
 
 export default App
 
